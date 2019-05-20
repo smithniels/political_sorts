@@ -128,28 +128,59 @@ The first 3 elements in the list remain in their position,
 every iteration through they subtract 1 from all of the other elements and add it to themselves,
 until the rest of the list is destroyed and they are the only ones left.
 '''
-list1 = [100,8,7,150,2,8,1,30,91,58,10]
-# def capitalistSort(arr)
 
-
-
-
+def capitalistSort(arr):
+    titans = []
+    counter = 0
+    try:
+        for i in arr[0:3]:
+            titans.append(arr[i])
+            print(arr)
+    except IndexError:
+        print("IndexError")
+# capitalistSort(list1)
 
 '''
 Thanos Sort: Randomly delete half the elements in the list over
 and over until the list happens to be sorted.
+# TODO: snap then check if order
+        if that's false ^ "snap"
 '''
-
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< might want to just rewrite this bit
+list1 = [1,8,7,150,2,8,1,30,91,58,10]
 def thanosSort(arr):
     import random
+    def order(arr):
+        for i in range(0,len(arr)):
+            # print(arr[i])
+            # print(arr[i+1])
+            if arr[i]>arr[i+1]:
+                snap(arr)
+
+    def snap(arr):
+        x = 0
+        try:
+            random.shuffle(arr)
+            snap = len(arr)//2
+            print(snap,"snap failure")
+            if snap <= 2:
+                print('stop')
+            else:
+                x = arr[:(snap)]    #<<<<<<<<<<<<<<<<<<
+                order(x)
+
+        except IndexError:
+            if arr[i] > arr[i-1]:
+                print('IndexError')
+                order(x)
+
     if len(arr) <= 1:
         arr = arr[0]/2
         return arr
     else:
-        random.shuffle(arr)
-        snap = len(arr)//2
-        return arr[snap:]
-# print(thanosSort(list1))
+        return snap(arr)
+print(thanosSort(list1))
+
 '''
 trumpSort O(0):
 The array is always sorted.
