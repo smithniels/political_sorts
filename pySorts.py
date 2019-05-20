@@ -10,20 +10,25 @@ Thanks to u/GhostBond for the idea! This was fun practice. :)
 '''
 
 '''
-O(1) Optimization Sort: Delete the whole list, an empty list is sorted list.
+O(1) Optimization Sort:
+Delete the whole list, an empty list is sorted list.
 '''
 def optimizationSort(arr):
     arr =  ''
     return arr
 
-'''
-O(-1) Sort: Fuck off, I'm not sorting your list.
-'''
-def qminus1Sort(arr):
-    return "Fuck Off! I'm not sorting your list"
+# print(optimizationSort(list1))
 
 '''
-StalinSort: You iterate down the list of elements checking if they're in order.
+O(-1) Sort:
+Fuck off, I'm not sorting your list.
+'''
+def ominus1Sort(arr):
+    return "Fuck Off! I'm not sorting your list"
+#print(ominus1Sort(list1))
+'''
+StalinSort:
+You iterate down the list of elements checking if they're in order.
 An element which is out of order is eliminated.
 At the end you have a sorted list.
 (this one took awhile to figure out! -ns)
@@ -46,9 +51,11 @@ def stalinSort(arr):
         if arr[i] > arr[i-1]:
             arr2.append(arr[i])
     return arr2
+# print(stalinSort(list))
 
 '''
-GenghisKhanSort: delete all elements except for the first,
+GenghisKhanSort:
+Delete all elements except for the first,
 repopulate the list with successors of the first element.
 '''
 def gengkhiskhanSort(arr):
@@ -58,13 +65,15 @@ def gengkhiskhanSort(arr):
         for j in range(0,len(arr)):
             arr[i] = gk
     return arr
-#
-# list1 = [0,-2,-4,-3,-1,-2,-23,1,4,2,4,5,4124,4,6]
+
+
 # print(gengkhiskhanSort(list1))
 
 '''
-HitlerSort: pick the value that you like,
-declare it as the highest, and then delete all other values.
+HitlerSort:
+Pick the value that you like,
+declare it as the highest,
+and then delete all other values.
 '''
 def hitlerSort(arr):
     value=input("Which value do you like the most? ")
@@ -74,8 +83,11 @@ def hitlerSort(arr):
     print('Excellent choice, ma\'am')
     return arr
 
+# print(hitlerSort(list1))
+
 '''
-AmishSort: Turn off computer, then you won't even need sorting.
+AmishSort:
+Turn off computer, then you won't even need sorting.
 '''
 # def amishSort(arr):
 #     import os
@@ -84,7 +96,8 @@ AmishSort: Turn off computer, then you won't even need sorting.
 # COMMENTED OUT TO AVOID DISASTER!
 
 '''
-Communist Sort: Wait for the list to sort itself.
+Communist Sort:
+Wait for the list to sort itself.
 Act upset when it doesn't happen until a tyrannical dictatorship shows up
 and forces the list into sorted order.
 '''
@@ -106,29 +119,40 @@ def communistSort(arr):
         print("I'm sorry I didn't hear you.")
         communistSort(arr)
     return arr
-
-
+# print(communistSort(list1))
 '''
-Capitalist Sort: The first 3 elements in the list remain in their position,
+# TODO: THIS
+
+Capitalist Sort:
+The first 3 elements in the list remain in their position,
 every iteration through they subtract 1 from all of the other elements and add it to themselves,
 until the rest of the list is destroyed and they are the only ones left.
 '''
+list1 = [100,8,7,150,2,8,1,30,91,58,10]
 # def capitalistSort(arr)
+
+
+
+
 
 '''
 Thanos Sort: Randomly delete half the elements in the list over
 and over until the list happens to be sorted.
 '''
+
 def thanosSort(arr):
     import random
-    random.shuffle(arr)
-    snap = len(arr)//2
-    return arr[snap:]
-
+    if len(arr) <= 1:
+        arr = arr[0]/2
+        return arr
+    else:
+        random.shuffle(arr)
+        snap = len(arr)//2
+        return arr[snap:]
 # print(thanosSort(list1))
-
 '''
-trumpSort O(0): the array is always sorted.
+trumpSort O(0):
+The array is always sorted.
 Anyone who says otherwise is fake news.
 '''
 def trumpSort(arr):
@@ -136,10 +160,11 @@ def trumpSort(arr):
     value = print("The list is now sorted. It\'s so lucky for you that I was here to help. I've been such a bigly help.")
     return arr
 
-# trumpSort(list1)
+# print(trumpSort(list1))
 
 '''
-LiberalSort: each element is declared to be out of order for moral reasons
+LiberalSort:
+Each element is declared to be out of order for moral reasons
 and committing moral crimes, elements have 1 subtracted from them at semi-random.
 The sort never actually ends as the narrative needs to keep going to maintain political power.
 '''
@@ -159,7 +184,8 @@ def liberalSort(arr):
 # print(liberalSort(list1))
 
 '''
-Republican Sort: Look at the first 5 elements.
+Republican Sort:
+Look at the first 5 elements.
 Choose the highest one no matter how much lower that is than
 other elements in the list past that.
 Declare that the new top value, the list never gets sorted
@@ -167,15 +193,24 @@ because it would upset the newly declared top element.
 '''
 
 def republicanSort(arr):
-    counter = 0
     max = 0
-    list2= []
-    while counter <= 5:
-        for i in range(0,len(arr)):
-            list2 += arr[i]
-            counter += 1
-    return list2
+    arr1= []
+    arr1=arr[:5]
+    for i in range(0,len(arr1)):
+        if arr[i] >max:
+            max = arr[i]
+    print("The highest number in: ",arr,"\n is...",max,"!")
+#republicanSort(list1)
 
 
-list1 = [1,4,6,2,7,10,1,243]
-print(republicanSort(list1))
+# print(optimizationSort(list1))
+# print(ominus1Sort(list1))
+# # print(stalinSort(list))
+# print(gengkhiskhanSort(list1))
+# print(hitlerSort(list1))
+# #amisishSort(list1)
+# print(communistSort(list1))
+#print(thanosSort(list1))
+#print(trumpSort(list1))
+#print(liberalSort(list1))
+#republicanSort(list1)
