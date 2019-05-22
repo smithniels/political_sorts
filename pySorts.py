@@ -2,10 +2,8 @@
 inspo: https://www.reddit.com/r/cscareerquestions/comments/bojrrb/hiring_managers_what_projects_stood_out_in_a_bad/enhmnu6/?utm_source=share&utm_medium=web2x
 This all came from a post from reddit user GhostBond. All funny comments below
 are theirs. The code is mine.
-
 A lot of this could be improved. I've only been working in Python for 6 months.
 If you see something that could be improved please let me know.
-
 Thanks to u/GhostBond for the idea! This was fun practice. :)
 '''
 
@@ -122,7 +120,6 @@ def communistSort(arr):
 # print(communistSort(list1))
 '''
 # TODO: THIS
-
 Capitalist Sort:
 The first 3 elements in the list remain in their position,
 every iteration through they subtract 1 from all of the other elements and add it to themselves,
@@ -143,31 +140,30 @@ def capitalistSort(arr):
 '''
 Thanos Sort: Randomly delete half the elements in the list over
 and over until the list happens to be sorted.
-# TODO: snap then check if order
-        if that's false ^ "snap"
+
 '''
 # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< might want to just rewrite this bit
-list1 = [1,8,7,150,2,8,1,30,91,58,10]
+
 def thanosSort(arr):
     import random
+
     def order(arr):
-        for i in range(0,len(arr)):
-            # print(arr[i])
-            # print(arr[i+1])
-            if arr[i]>arr[i+1]:
-                snap(arr)
+        # sorted1 = []
+        # sorted1 = sorted(arr)
+        if sorted(arr) == arr:
+            print("It is done. ", arr)
+        else:
+            print(arr, " This isn't complete.")
+            snap(arr)
 
     def snap(arr):
         x = 0
         try:
+            x = 0
             random.shuffle(arr)
             snap = len(arr)//2
-            print(snap,"snap failure")
-            if snap <= 2:
-                print('stop')
-            else:
-                x = arr[:(snap)]    #<<<<<<<<<<<<<<<<<<
-                order(x)
+            x = arr[:(snap)]
+            order(x)
 
         except IndexError:
             if arr[i] > arr[i-1]:
@@ -179,7 +175,6 @@ def thanosSort(arr):
         return arr
     else:
         return snap(arr)
-print(thanosSort(list1))
 
 '''
 trumpSort O(0):
@@ -211,8 +206,8 @@ def liberalSort(arr):
             arr[i] -= 1
             counter += 1
     return arr
-
-# print(liberalSort(list1))
+list1 = [2,4,5,1,6,100,1000]
+print(liberalSort(list1))
 
 '''
 Republican Sort:
@@ -230,8 +225,10 @@ def republicanSort(arr):
     for i in range(0,len(arr1)):
         if arr[i] >max:
             max = arr[i]
-    print("The highest number in: ",arr,"\n is...",max,"!")
+    result = print("The highest number in: ",arr,"\n is...",max,"!")
+    return result
 #republicanSort(list1)
+
 
 
 # print(optimizationSort(list1))
@@ -241,7 +238,7 @@ def republicanSort(arr):
 # print(hitlerSort(list1))
 # #amisishSort(list1)
 # print(communistSort(list1))
-#print(thanosSort(list1))
+#thanosSort(list1)
 #print(trumpSort(list1))
 #print(liberalSort(list1))
 #republicanSort(list1)
