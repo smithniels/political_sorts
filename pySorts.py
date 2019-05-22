@@ -29,7 +29,7 @@ Delete the whole list, an empty list is sorted list.
 
 def optimizationSort(arr):
     print('Optimization Sort:')
-    print('List: 'arr)
+    print('List: ',arr)
     arr =  ''
     print('All Done:',arr, '[  ]')
     return arr
@@ -42,7 +42,7 @@ Fuck off, I'm not sorting your list.
 '''
 def ominus1Sort(arr):
     print('Big O Minus 1 Sort:')
-    print('List: 'arr)
+    print('List: ',arr)
     print("Fuck Off! I'm not sorting your list")
 
 
@@ -56,7 +56,7 @@ At the end you have a sorted list.
 '''
 def stalinSort(arr):
     print('Stalin Sort:')
-    print('List: 'arr)
+    print('List: ',arr)
     arr2 = []
     max = ''
     if len(arr) <= 1:
@@ -83,7 +83,7 @@ repopulate the list with successors of the first element.
 '''
 def gengkhiskhanSort(arr):
     print('Genkhis Khan Sort:')
-    print('List: 'arr)
+    print('List: ',arr)
 
     gk = ''
     for i in range(0,len(arr)):
@@ -101,7 +101,7 @@ and then delete all other values.
 '''
 def hitlerSort(arr):
     print('Hitler Sort:')
-    print('List: 'arr)
+    print('List: ',arr)
     value=input("Which value do you like the most? ")
     for i in range(0,len(arr)):
         for j in range(0,len(arr)):
@@ -119,7 +119,7 @@ Turn off computer, then you won't even need sorting.
 ####
 #### def amishSort(arr):
 ####     print('Amish Sort:')
-####     print('List: 'arr)
+####     print('List: ',arr)
 ####     import os
 ####     os.system("shutdown /s /t 1")
 ####
@@ -133,7 +133,7 @@ and forces the list into sorted order.
 def communistSort(arr):
     import time
     print('Communist Sort:')
-    print('List: 'arr)
+    print('List: ',arr)
 
     value = input("Is the vanguard ready yet? (y/n)")
     if value == 'n':
@@ -171,7 +171,7 @@ until the rest of the list is destroyed and they are the only ones left.
 
 def capitalistSort(arr):
     print('Capitalist Sort:')
-    print('List: 'arr)
+    print('List: ',arr)
     titans = [] #of industry
     counter = 0
     try:
@@ -191,7 +191,7 @@ and over until the list happens to be sorted.
 def thanosSort(arr):
     from random import shuffle
     print('Thanos Sort:')
-    print('List: 'arr)
+    print('List: ',arr)
     def order(arr):
         if sorted(arr) == arr:
             print(arr,"It is done. ")
@@ -227,7 +227,7 @@ Anyone who says otherwise is fake news.
 '''
 def trumpSort(arr):
     print('Trump Sort:')
-    print('List: 'arr)
+    print('List: ',arr)
     value = print('''
      The list is now sorted.
      It\'s so lucky for you that I was here to help
@@ -268,7 +268,7 @@ because it would upset the newly declared top element.
 
 def republicanSort(arr):
     print('Republican Sort:')
-    print('List: 'arr)
+    print('List: ',arr)
     max = 0
     arr1= []
     arr1=arr[:5]
