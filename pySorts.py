@@ -106,7 +106,8 @@ def hitlerSort(arr):
             arr[i] = value
     print('Excellent choice, Mr. Hitler \n Here\'s your new list: ')
     result = print(arr)
-    return result
+    return result 
+   #I realize this is replacing, and not deleting, but if I listened to the directions here the nazis win, and we can't have that!
 
 
 '''
