@@ -6,9 +6,7 @@ A lot of this could be improved. I've only been working in Python for 6 months.
 If you see something that could be improved please let me know.
 Thanks to u/GhostBond for the idea! This was fun practice. :)
 '''
-
-# print('''
-# Please select a sort:
+'''
 # 1.  Optimization
 # 2.  Big O Minus 1
 # 3.  Stalin
@@ -20,7 +18,7 @@ Thanks to u/GhostBond for the idea! This was fun practice. :)
 # 9.  Trump
 # 10. Liberal
 # 11. Republican
-#     ''')
+ '''
 
 '''
 O(1) Optimization Sort:
