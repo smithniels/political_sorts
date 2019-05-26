@@ -17,15 +17,13 @@ def optimizationSort(arr):
     arr =  ''
     return arr
 
-# print(optimizationSort(list1))
-
 '''
 O(-1) Sort:
 Fuck off, I'm not sorting your list.
 '''
 def ominus1Sort(arr):
     return "Fuck Off! I'm not sorting your list"
-#print(ominus1Sort(list1))
+
 '''
 StalinSort:
 You iterate down the list of elements checking if they're in order.
@@ -65,12 +63,6 @@ def gengkhiskhanSort(arr):
         for j in range(0,len(arr)):
             arr[i] = gk
     return arr
-
-
-
-
-
-
 
 '''
 HitlerSort:
@@ -127,25 +119,36 @@ def communistSort(arr):
     return arr
 
 '''
-# TODO: THIS
-
 Capitalist Sort:
 The first 3 elements in the list remain in their position,
 every iteration through they subtract 1 from all of the other elements and add it to themselves,
 until the rest of the list is destroyed and they are the only ones left.
 '''
-
 def capitalistSort(arr):
     titans = []
-    counter = 0
-    try:
-        for i in arr[0:3]:
-            titans.append(arr[i])
-            print(arr)
+    plebs  = []
+    sum = 0
+    print('Hello, World')
+    for i in range(0,3):
+        titans.append(arr[i])
+    print("Titans: ",titans)
+    print(len(arr))
+    for i in range(3,(len(arr))):
+    
+        plebs.append(arr[i])
 
-    except IndexError:
-        print("IndexError")
-
+        arr[i] -= 1
+    print("Plebs: ",plebs)
+    for i in range(0,len(plebs)):
+        while plebs[i] > 0:
+            plebs[i] -= 1
+            sum += 1
+    sum2 = sum
+    #while sum > 0:
+    for j in range(0,len(titans)):
+        titans[j] += sum2
+    final = titans + plebs
+    print(" This is fair: \n",final)
 
 '''
 Thanos Sort: Randomly delete half the elements in the list over
