@@ -153,44 +153,37 @@ and over until the list happens to be sorted.
 # TODO: snap then check if order
         if that's false ^ "snap"
 '''
-# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< might want to just rewrite this bit
-list1 = [1,8,7,150,2,8,1,30,91,58,10]
 def thanosSort(arr):
-    import random
+    from random import shuffle
+    print('Thanos Sort:')
+    print('List: ',arr)
     def order(arr):
-        for i in range(0,len(arr)):
-            print(arr[i])
-            print(arr[i+1])
-            try:
-                if arr[i]>arr[i+1]:
-                    snap(arr)
-            except IndexError:
-                return arr
+        if sorted(arr) == arr:
+            print(arr,"It is done. ")
+        else:
+            print(arr, " This isn't complete.")
+            snap(arr)
 
     def snap(arr):
+        print('*snap*')
         x = 0
         try:
-            random.shuffle(arr)
+            x = 0
+            shuffle(arr)
             snap = len(arr)//2
-            print(snap,"snap failure")
-            if snap <= 2:
-                print('stop')
-            else:
-                x = arr[:(snap)]    #<<<<<<<<<<<<<<<<<<
-                order(x)
+            x = arr[:(snap)]
+            order(x)
 
         except IndexError:
             if arr[i] > arr[i-1]:
                 print('IndexError')
                 order(x)
 
-
     if len(arr) <= 1:
         arr = arr[0]/2
         return arr
     else:
         return snap(arr)
-print(thanosSort(list1))
 
 '''
 trumpSort O(0):
