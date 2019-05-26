@@ -51,7 +51,7 @@ def stalinSort(arr):
         if arr[i] > arr[i-1]:
             arr2.append(arr[i])
     return arr2
-# print(stalinSort(list))
+
 
 '''
 GenghisKhanSort:
@@ -70,7 +70,7 @@ def gengkhiskhanSort(arr):
 
 
 
-# print(gengkhiskhanSort(list1))
+
 
 '''
 HitlerSort:
@@ -89,7 +89,7 @@ def hitlerSort(arr):
     print('Excellent choice, ma\'am')
     result = print(list2)
     return result
-#hitlerSort(list1)
+
 
 '''
 AmishSort:
@@ -125,7 +125,7 @@ def communistSort(arr):
         print("I'm sorry I didn't hear you.")
         communistSort(arr)
     return arr
-# print(communistSort(list1))
+
 '''
 # TODO: THIS
 
@@ -145,7 +145,7 @@ def capitalistSort(arr):
 
     except IndexError:
         print("IndexError")
-# capitalistSort(list1)
+
 
 '''
 Thanos Sort: Randomly delete half the elements in the list over
@@ -195,7 +195,7 @@ def trumpSort(arr):
     value = print("The list is now sorted. It\'s so lucky for you that I was here to help. I've been such a bigly help.")
     return arr
 
-# print(trumpSort(list1))
+
 
 '''
 LiberalSort:
@@ -216,7 +216,7 @@ def liberalSort(arr):
             counter += 1
     return arr
 
-# print(liberalSort(list1))
+
 
 '''
 Republican Sort:
@@ -235,17 +235,5 @@ def republicanSort(arr):
         if arr[i] >max:
             max = arr[i]
     print("The highest number in: ",arr,"\n is...",max,"!")
-#republicanSort(list1)
 
 
-# print(optimizationSort(list1))
-# print(ominus1Sort(list1))
-# # print(stalinSort(list))
-# print(gengkhiskhanSort(list1))
-# print(hitlerSort(list1))
-# #amisishSort(list1)
-# print(communistSort(list1))
-#print(thanosSort(list1))
-#print(trumpSort(list1))
-#print(liberalSort(list1))
-#republicanSort(list1)
