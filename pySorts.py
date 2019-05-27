@@ -101,7 +101,7 @@ and forces the list into sorted order.
 '''
 def communistSort(arr):
     import time
-    value = input("Is the vanguard ready? (y/n)")
+    value = input("Is the vanguard ready? (y/n) ")
     if value == 'n':
         time.sleep(2)
         communistSort(arr)
@@ -116,7 +116,8 @@ def communistSort(arr):
     else:
         print("I'm sorry I didn't hear you.")
         communistSort(arr)
-    return arr
+    result = print(arr)
+    return result
 
 '''
 Capitalist Sort:
@@ -144,7 +145,6 @@ def capitalistSort(arr):
             plebs[i] -= 1
             sum += 1
     sum2 = sum
-    #while sum > 0:
     for j in range(0,len(titans)):
         titans[j] += sum2
     final = titans + plebs
@@ -195,10 +195,8 @@ Anyone who says otherwise is fake news.
 '''
 def trumpSort(arr):
     print(arr)
-    value = print("The list is now sorted. It\'s so lucky for you that I was here to help. I've been such a bigly help.")
+    value = print("The list is now sorted. It\'s so lucky for you that I was here to help before the brown people showed up to steal our right to bear arms")
     return arr
-
-
 
 '''
 LiberalSort:
@@ -219,8 +217,6 @@ def liberalSort(arr):
             counter += 1
     return arr
 
-
-
 '''
 Republican Sort:
 Look at the first 5 elements.
@@ -238,5 +234,3 @@ def republicanSort(arr):
         if arr[i] >max:
             max = arr[i]
     print("The highest number in: ",arr,"\n is...",max,"!")
-
-
