@@ -1,6 +1,6 @@
 '''
 inspo: https://www.reddit.com/r/cscareerquestions/comments/bojrrb/hiring_managers_what_projects_stood_out_in_a_bad/enhmnu6/?utm_source=share&utm_medium=web2x
-This all came from a post from reddit user GhostBond. All funny comments below
+This all came from a post from reddit user GhostBond. Most funny comments below
 are theirs. The code is mine.
 
 A lot of this could be improved. I've only been working in Python for 6 months.
@@ -8,6 +8,8 @@ If you see something that could be improved please let me know.
 
 Thanks to u/GhostBond for the idea! This was fun practice. :)
 '''
+
+list1 = [1,4,6,20,30,40,50,400,2,5,1,2,50,520,124,512,5134,10000]
 
 '''
 O(1) Optimization Sort:
@@ -71,7 +73,6 @@ declare it as the highest,
 and then delete all other values.
 '''
 
-list1= [1,2,3,4,5,6,6]
 def hitlerSort(arr):
     value=input("Which value do you like the most? ")
     list2 = []
@@ -81,7 +82,6 @@ def hitlerSort(arr):
     print('Excellent choice, ma\'am')
     result = print(list2)
     return result
-
 
 '''
 AmishSort:
@@ -129,11 +129,9 @@ def capitalistSort(arr):
     titans = []
     plebs  = []
     sum = 0
-    print('Hello, World')
     for i in range(0,3):
         titans.append(arr[i])
-    print("Titans: ",titans)
-    print(len(arr))
+    print("Titans:",titans)
     for i in range(3,(len(arr))):
     
         plebs.append(arr[i])
@@ -215,7 +213,8 @@ def liberalSort(arr):
         for i in range(0,randrange(len(arr)+1)):
             arr[i] -= 1
             counter += 1
-    return arr
+    result = print(arr)
+    return result
 
 '''
 Republican Sort:
@@ -233,4 +232,5 @@ def republicanSort(arr):
     for i in range(0,len(arr1)):
         if arr[i] >max:
             max = arr[i]
-    print("The highest number in: ",arr,"\n is...",max,"!")
+    print("The highest number in: "+str(arr)+"\n is... "+str(max)+"! Do you have a problem with that?")
+republicanSort(list1)
