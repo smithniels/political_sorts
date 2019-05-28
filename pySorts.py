@@ -7,7 +7,7 @@ I'm sure this code could be improved, so if you see something that could be impr
 
 Someone on Reddit mentioned doing list comprehensions for some of those For loops, but I'm not sure how to assign
 local variables within those comprehensions. I believe it involves a "nested generator expression" according to someone on
-stack overflow, but I haven't looked into it. (TODO:)
+stack overflow, but I haven't looked into it yet. (TODO:)
 
 Thanks to u/GhostBond for the idea! This was fun practice. :)
 '''
