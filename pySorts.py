@@ -135,9 +135,7 @@ def capitalistSort(arr):
         titans.append(arr[i])
     print("Titans:",titans)
     for i in range(3,(len(arr))):
-
         plebs.append(arr[i])
-
         arr[i] -= 1
     print("Plebs: ",plebs)
     for i in range(0,len(plebs)):
@@ -176,7 +174,6 @@ def thanosSort(arr):
             snap = len(arr)//2
             x = arr[:(snap)]
             order(x)
-
         except IndexError:
             if arr[i] > arr[i-1]:
                 print('IndexError')
@@ -197,7 +194,7 @@ def trumpSort(arr):
     print(arr)
     value = print("The list is now sorted. It\'s so lucky for you that I was here to help before the brown people \n showed up to steal our right to bear arms or whatever")
     return arr
-trumpSort(list1)
+
 '''
 LiberalSort:
 Each element is declared to be out of order for moral reasons
