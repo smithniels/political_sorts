@@ -3,13 +3,16 @@ inspo: https://www.reddit.com/r/cscareerquestions/comments/bojrrb/hiring_manager
 This all came from a post from reddit user GhostBond. Most funny comments below
 are theirs. The code is mine.
 
-A lot of this could be improved. I've only been working in Python for 6 months.
-If you see something that could be improved please let me know.
+I'm sure this code could be improved, so if you see something that could be improved please let me know!
+
+Someone on Reddit mentioned doing list comprehensions for some of those For loops, but I'm not sure how to assign
+local variables within those comprehensions. I believe it involves a "nested generator expression" according to someone on
+stack overflow, but I haven't looked into it. (TODO:)
 
 Thanks to u/GhostBond for the idea! This was fun practice. :)
 '''
 
-list1 = [1,4,6,20,30,40,50,400,2,5,1,2,50,520,124,512,5134,10000]
+list1 = [1,2,3,4,6,5,20,30,40,50,400,2,5,1,2,50,520,124,512,5134,10000]
 
 '''
 O(1) Optimization Sort:
@@ -51,7 +54,6 @@ def stalinSort(arr):
         if arr[i] > arr[i-1]:
             arr2.append(arr[i])
     return arr2
-
 
 '''
 GenghisKhanSort:
@@ -133,7 +135,7 @@ def capitalistSort(arr):
         titans.append(arr[i])
     print("Titans:",titans)
     for i in range(3,(len(arr))):
-    
+
         plebs.append(arr[i])
 
         arr[i] -= 1
@@ -193,9 +195,9 @@ Anyone who says otherwise is fake news.
 '''
 def trumpSort(arr):
     print(arr)
-    value = print("The list is now sorted. It\'s so lucky for you that I was here to help before the brown people showed up to steal our right to bear arms")
+    value = print("The list is now sorted. It\'s so lucky for you that I was here to help before the brown people \n showed up to steal our right to bear arms or whatever")
     return arr
-
+trumpSort(list1)
 '''
 LiberalSort:
 Each element is declared to be out of order for moral reasons
@@ -233,4 +235,3 @@ def republicanSort(arr):
         if arr[i] >max:
             max = arr[i]
     print("The highest number in: "+str(arr)+"\n is... "+str(max)+"! Do you have a problem with that?")
-republicanSort(list1)
