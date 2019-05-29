@@ -126,6 +126,11 @@ Capitalist Sort:
 The first 3 elements in the list remain in their position,
 every iteration through they subtract 1 from all of the other elements and add it to themselves,
 until the rest of the list is destroyed and they are the only ones left.
+
+
+TODO: I need to switch this, so it isn't adding all of the plebs and repeatedly putting them into titans. 
+    at the moment if plebs is 100 and titans is [1,2,3] titans wi2ll become [101,102,103]. 
+    it should be closer to [35,35,37] (34+1,33+2,33+3]
 '''
 def capitalistSort(arr):
     titans = []
