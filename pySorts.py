@@ -74,7 +74,6 @@ Pick the value that you like,
 declare it as the highest,
 and then delete all other values.
 '''
-
 def hitlerSort(arr):
     value=input("Which value do you like the most? ")
     list2 = []
@@ -206,7 +205,6 @@ Each element is declared to be out of order for moral reasons
 and committing moral crimes, elements have 1 subtracted from them at semi-random.
 The sort never actually ends as the narrative needs to keep going to maintain political power.
 '''
-
 def liberalSort(arr):
     from random import randrange,randint
     import random
@@ -228,7 +226,6 @@ other elements in the list past that.
 Declare that the new top value, the list never gets sorted
 because it would upset the newly declared top element.
 '''
-
 def republicanSort(arr):
     max = 0
     arr1= []
