@@ -132,7 +132,7 @@ TODO: I need to switch this, so it isn't adding all of the plebs and repeatedly 
     it should be closer to [35,35,37] (34+1,33+2,33+3]
 '''
 def capitalistSort(arr):
-    titans = []
+    titans = [] #of industry
     plebs  = []
     sum = 0
     for i in range(0,3):
